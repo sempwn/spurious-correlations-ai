@@ -1,0 +1,33 @@
+<label for="checkbox_GPs">  Select which ED category to show </label>
+<select id="type" onchange="filterMarkers(this.value);">
+    <option value="">All ED categories</option>
+    <option value="MHSU">Mental illness</option>
+    <option value="Cancer">Respiratory diseases</option>
+    <option value="Infectious Disease">Infectious Diseases</option>
+</select>
+<ul>
+        <div class="input-color">
+            <input type="text" value="Low volume of ED visits" />
+            <div class="color-box" style="background-color: #00BFFF;"></div>
+        </div>
+        <div class="input-color">
+            <input type="text" value="High volume of ED visits" />
+            <div class="color-box" style="background-color: #0A6586;"></div>
+        </div>
+</ul>
+<br>
+<label for="checkbox_GPs"> Show GPs</label>
+<input type="checkbox"  value="GPs" id="checkbox_GPs" onchange="filterGPMarkers(this.value);">
+<ul>
+        <div class="input-color">
+            <input type="text" value="Accepting new patients" />
+            <div class="color-box" style="background-color: #FF0A0A;"></div>
+        </div>
+        <div class="input-color">
+            <input type="text" value="Not accepting new patients" />
+            <div class="color-box" style="background-color: #A20A0A;"></div>
+        </div>
+</ul>
+<br>
+
+<div id="map-canvas"></div>
