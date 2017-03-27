@@ -1,4 +1,4 @@
-Jsfiddle: http: //jsfiddle.net/cfbh9va8/8/show/
+//Jsfiddle: http: //jsfiddle.net/cfbh9va8/8/show/
 
   function createMarker(width, height, title) {
     var canvas, context, radius = 4;
@@ -694,7 +694,7 @@ filterMarkers = function(category) {
     if (marker.category == category || category.length === 0) {
       marker.setVisible(true);
     }
-    // Categories don't match 
+    // Categories don't match
     else {
       marker.setVisible(false);
     }
